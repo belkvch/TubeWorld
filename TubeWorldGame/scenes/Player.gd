@@ -9,6 +9,7 @@ func _ready():
 	screen_size = get_viewport_rect().size
 	hide()
 
+
 func start(pos):
 	position = pos
 	show()
