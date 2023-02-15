@@ -11,10 +11,11 @@ func show_game_over():
 	show_message("Game Over")
 	yield($MessageTimer, "timeout")
 
-	$Message.text = "Tube World!"
+	$Message.text = "Delete Tinder,\npls"
 	$Message.show()
 
-	yield(get_tree().create_timer(1), "timeout")
+	yield(get_tree().create_timer(2), "timeout")
+	$Message.text = "Tube world"
 	$TextureButton.show()
 	$TextInButton.show()
 
@@ -27,4 +28,5 @@ func _on_MessageTimer_timeout():
 func _on_TextureButton_pressed():
 	$TextureButton.hide()
 	$TextInButton.hide()
+	$ButtonSound.play()
 	emit_signal("start_game")

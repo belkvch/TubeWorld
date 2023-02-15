@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Judas-music-tube.mp3-d1cb55a83736aadf60dd5999bf9a6ebd.mp3str"
+
+[deps]
+
+source_file="res://audio/Judas-music-tube.mp3"
+dest_files=[ "res://.import/Judas-music-tube.mp3-d1cb55a83736aadf60dd5999bf9a6ebd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

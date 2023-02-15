@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tube-end-game-sound.mp3-ca9eee6967d9d14684025fbe2abde84d.mp3str"
+
+[deps]
+
+source_file="res://audio/tube-end-game-sound.mp3"
+dest_files=[ "res://.import/tube-end-game-sound.mp3-ca9eee6967d9d14684025fbe2abde84d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

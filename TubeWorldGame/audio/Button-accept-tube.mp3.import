@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Button-accept-tube.mp3-4dffcc250fdf47c4868046783430eb69.mp3str"
+
+[deps]
+
+source_file="res://audio/Button-accept-tube.mp3"
+dest_files=[ "res://.import/Button-accept-tube.mp3-4dffcc250fdf47c4868046783430eb69.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
