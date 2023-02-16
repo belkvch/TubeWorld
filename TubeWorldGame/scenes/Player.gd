@@ -12,6 +12,7 @@ func _ready():
 func start(pos):
 	position = pos
 	show()
+	$AnimatedSprite.play("down"+String(Game.PlayerSelect))
 	$CollisionShape2D.disabled = false
 
 func _process(delta):
@@ -36,13 +37,13 @@ func _process(delta):
 	position.y = clamp(position.y, 0, screen_size.y)
 
 	if velocity.x != 0:
-		$AnimatedSprite.animation = "walk"
+		$AnimatedSprite.animation = "walk"+String(Game.PlayerSelect)
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
 	elif velocity.y > 0:
-		$AnimatedSprite.animation = "down"
+		$AnimatedSprite.animation = "down"+String(Game.PlayerSelect)
 	elif velocity.y != 0:
-		$AnimatedSprite.animation = "up"
+		$AnimatedSprite.animation = "up"+String(Game.PlayerSelect)
 
 func _on_Player_body_entered(body):
 	hide() 

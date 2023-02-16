@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://sprites/Polina/Polina_up1.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Polina/Polina_up4.png" type="Texture" id=2]
@@ -13,24 +13,108 @@
 [ext_resource path="res://sprites/Polina/Polina_step_first1.png" type="Texture" id=11]
 [ext_resource path="res://sprites/Polina/Polina_down4.png" type="Texture" id=12]
 [ext_resource path="res://scenes/Player.gd" type="Script" id=13]
+[ext_resource path="res://sprites/Nargiz/Nargiz_stand3.png" type="Texture" id=14]
+[ext_resource path="res://sprites/Nargiz/Nargiz_up2.png" type="Texture" id=15]
+[ext_resource path="res://sprites/Lina/Lina_up1.png" type="Texture" id=16]
+[ext_resource path="res://sprites/Nargiz/Nargiz_up1.png" type="Texture" id=17]
+[ext_resource path="res://sprites/Lina/Lina_stand4.png" type="Texture" id=18]
+[ext_resource path="res://sprites/Nargiz/Nargiz_stand4.png" type="Texture" id=19]
+[ext_resource path="res://sprites/Dora/Dora_stand3.png" type="Texture" id=20]
+[ext_resource path="res://sprites/Lina/Lina_down2.png" type="Texture" id=21]
+[ext_resource path="res://sprites/Nargiz/Nargiz_down4.png" type="Texture" id=22]
+[ext_resource path="res://sprites/Lina/Lina_stand2.png" type="Texture" id=23]
+[ext_resource path="res://sprites/Nargiz/Nargiz_stand1.png" type="Texture" id=24]
+[ext_resource path="res://sprites/Dora/Dora_up2.png" type="Texture" id=25]
+[ext_resource path="res://sprites/Lina/Lina_up2.png" type="Texture" id=26]
+[ext_resource path="res://sprites/Lina/Lina_up3.png" type="Texture" id=27]
+[ext_resource path="res://sprites/Lina/Lina_up4.png" type="Texture" id=28]
+[ext_resource path="res://sprites/Nargiz/Nargiz_down3.png" type="Texture" id=29]
+[ext_resource path="res://sprites/Dora/Dora_down1.png" type="Texture" id=30]
+[ext_resource path="res://sprites/Dora/Dora_up1.png" type="Texture" id=31]
+[ext_resource path="res://sprites/Dora/Dora_stand2.png" type="Texture" id=32]
+[ext_resource path="res://sprites/Dora/Dora_up3.png" type="Texture" id=33]
+[ext_resource path="res://sprites/Dora/Dora_up4.png" type="Texture" id=34]
+[ext_resource path="res://sprites/Lina/Lina_stand1.png" type="Texture" id=35]
+[ext_resource path="res://sprites/Dora/Dora_down3.png" type="Texture" id=36]
+[ext_resource path="res://sprites/Nargiz/Nargiz_down1.png" type="Texture" id=37]
+[ext_resource path="res://sprites/Nargiz/Nargiz_up3.png" type="Texture" id=38]
+[ext_resource path="res://sprites/Nargiz/Nargiz_up4.png" type="Texture" id=39]
+[ext_resource path="res://sprites/Dora/Dora_down2.png" type="Texture" id=40]
+[ext_resource path="res://sprites/Lina/Lina_stand3.png" type="Texture" id=41]
+[ext_resource path="res://sprites/Lina/Lina_down3.png" type="Texture" id=42]
+[ext_resource path="res://sprites/Dora/Dora_down4.png" type="Texture" id=43]
+[ext_resource path="res://sprites/Nargiz/Nargiz_stand2.png" type="Texture" id=44]
+[ext_resource path="res://sprites/Dora/Dora_stand4.png" type="Texture" id=45]
+[ext_resource path="res://sprites/Lina/Lina_down1.png" type="Texture" id=46]
+[ext_resource path="res://sprites/Dora/Dora_stand1.png" type="Texture" id=47]
+[ext_resource path="res://sprites/Nargiz/Nargiz_down2.png" type="Texture" id=48]
+[ext_resource path="res://sprites/Lina/Lina_down4.png" type="Texture" id=49]
+
+[sub_resource type="GDScript" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 10 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 12 ) ],
 "loop": true,
-"name": "down",
+"name": "down0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 48 ), ExtResource( 29 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "down1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 21 ), ExtResource( 42 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "down2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "down3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
-"name": "up",
+"name": "up0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "up1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "up2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 25 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "up3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "walk",
+"name": "walk0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 44 ), ExtResource( 14 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "walk1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 23 ), ExtResource( 41 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "walk2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 32 ), ExtResource( 20 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "walk3",
 "speed": 5.0
 } ]
+script = SubResource( 3 )
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 36.5
@@ -46,7 +130,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.65, 0.65 )
 frames = SubResource( 1 )
-animation = "walk"
+animation = "down0"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2.5, 0 )
