@@ -18,6 +18,8 @@ func show_game_over():
 	$Message.text = "Tube world"
 	$TextureButton.show()
 	$TextInButton.show()
+	$CharacherButton.show()
+	$TextInButtonCharacter.show()
 
 func update_score(score):
 	$ScoreLabel.text = str(score)
@@ -28,5 +30,12 @@ func _on_MessageTimer_timeout():
 func _on_TextureButton_pressed():
 	$TextureButton.hide()
 	$TextInButton.hide()
+	$CharacherButton.hide()
+	$TextInButtonCharacter.hide()
 	$ButtonSound.play()
 	emit_signal("start_game")
+
+
+func _on_CharacherButton_pressed():
+	$ButtonSound.play()
+	get_tree().change_scene("res://scenes/CharacterSelect.tscn")

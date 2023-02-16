@@ -22,7 +22,6 @@ func new_game():
 	get_tree().call_group("mobs", "queue_free")
 	$Music.play()
 
-
 func _on_MobTimer_timeout():
 	var mob = mob_scene.instance()
 	var mob_spawn_location = get_node("MobPath/MobSpawnLocation")
@@ -43,10 +42,6 @@ func _on_StartTimer_timeout():
 	$MobTimer.start()
 	$ScoreTimer.start()
 
-
 func _on_ScoreTimer_timeout():
 	score += 1
 	$HUD.update_score(score)
-
-
-
