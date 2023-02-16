@@ -41,8 +41,8 @@ align = 1
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_top = -32.5
-margin_bottom = 32.5
+margin_top = -136.0
+margin_bottom = -71.0
 custom_fonts/font = SubResource( 1 )
 text = "Tube world"
 align = 1
@@ -58,9 +58,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -103.0
-margin_top = -315.0
+margin_top = -418.5
 margin_right = 127.0
-margin_bottom = -215.0
+margin_bottom = -318.5
 rect_scale = Vector2( 0.9, 0.7 )
 shortcut = SubResource( 5 )
 texture_normal = ExtResource( 1 )
@@ -68,9 +68,9 @@ texture_pressed = ExtResource( 3 )
 
 [node name="TextInButton" type="Label" parent="."]
 margin_left = 202.0
-margin_top = 419.0
+margin_top = 315.5
 margin_right = 282.0
-margin_bottom = 459.0
+margin_bottom = 355.5
 custom_fonts/font = SubResource( 2 )
 text = "Start"
 
@@ -79,21 +79,39 @@ stream = SubResource( 3 )
 
 [node name="CharacherButton" type="TextureButton" parent="."]
 margin_left = 136.0
-margin_top = 488.0
+margin_top = 384.5
 margin_right = 366.0
-margin_bottom = 588.0
+margin_bottom = 484.5
 rect_scale = Vector2( 0.9, 0.7 )
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 3 )
 
 [node name="TextInButtonCharacter" type="Label" parent="."]
 margin_left = 192.0
-margin_top = 512.0
+margin_top = 408.5
 margin_right = 312.0
-margin_bottom = 542.0
+margin_bottom = 438.5
 custom_fonts/font = SubResource( 8 )
 text = "Characters"
+
+[node name="InfoButton" type="TextureButton" parent="."]
+margin_left = 136.0
+margin_top = 472.5
+margin_right = 366.0
+margin_bottom = 572.5
+rect_scale = Vector2( 0.9, 0.7 )
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 3 )
+
+[node name="TextInButtonInfo" type="Label" parent="."]
+margin_left = 192.0
+margin_top = 496.5
+margin_right = 312.0
+margin_bottom = 526.5
+custom_fonts/font = SubResource( 8 )
+text = "Information"
 
 [connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="CharacherButton" to="." method="_on_CharacherButton_pressed"]
+[connection signal="pressed" from="InfoButton" to="." method="_on_InfoButton_pressed"]

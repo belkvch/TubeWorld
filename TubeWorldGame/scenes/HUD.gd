@@ -20,6 +20,8 @@ func show_game_over():
 	$TextInButton.show()
 	$CharacherButton.show()
 	$TextInButtonCharacter.show()
+	$InfoButton.show()
+	$TextInButtonInfo.show()
 
 func update_score(score):
 	$ScoreLabel.text = str(score)
@@ -32,6 +34,8 @@ func _on_TextureButton_pressed():
 	$TextInButton.hide()
 	$CharacherButton.hide()
 	$TextInButtonCharacter.hide()
+	$InfoButton.hide()
+	$TextInButtonInfo.hide()
 	$ButtonSound.play()
 	emit_signal("start_game")
 
@@ -39,3 +43,8 @@ func _on_TextureButton_pressed():
 func _on_CharacherButton_pressed():
 	$ButtonSound.play()
 	get_tree().change_scene("res://scenes/CharacterSelect.tscn")
+
+
+func _on_InfoButton_pressed():
+	$ButtonSound.play()
+	get_tree().change_scene("res://scenes/ControlInfo.tscn")
