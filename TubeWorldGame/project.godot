@@ -16,7 +16,7 @@ boot_splash/show_image=false
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://tubeworld-icon.png"
 config/macos_native_icon="res://tubeworld-icon.png"
-config/windows_native_icon="res://tubeworld-icon.png"
+config/windows_native_icon="res://tubeworld-icon.ico"
 
 [autoload]
 
